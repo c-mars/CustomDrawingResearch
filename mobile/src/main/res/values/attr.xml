@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TestProgressBar">
+        <attr name="inactiveColor" format="color" />
+        <attr name="activeColor" format="color" />
+        <attr name="doneColor" format="color" />
+        <attr name="stepsCount" format="integer" />
+        <attr name="currentProgress" format="integer" />
+    </declare-styleable>
+</resources>
