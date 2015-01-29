@@ -5,6 +5,7 @@ import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 
 /**
@@ -121,6 +122,7 @@ public class TestProgressBar extends View {
         // Draw the shadow
         for (int i=0; i<stepsNumber; i++) {
             int offset = radius*2*i;
+            Log.d("a", "i="+i+", cp="+currentProgress);
             if (i == currentProgress) {
                 canvas.drawCircle(startX+offset, startY, radius, activePaint);
             } else if (i < currentProgress) {

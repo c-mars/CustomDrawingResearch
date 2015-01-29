@@ -17,7 +17,10 @@ import butterknife.InjectView;
 public class MainActivity extends ActionBarActivity {
 
     @InjectView(R.id.text)
-    protected TextView text;
+    protected TextView textView;
+
+    @InjectView(R.id.shape)
+    protected ShapeView shapeView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,8 +29,11 @@ public class MainActivity extends ActionBarActivity {
 
         ButterKnife.inject(this);
 
-        text.setText(String.format("%.1f", 1.256));
-        setBlinkAnim(text);
+        textView.setText(String.format("%.1f", 1.256));
+        setBlinkAnim(textView);
+
+//        shapeView.setShapeColor(ShapeView.ShapeColor.BLUE);
+//        shapeView.setShapeType(ShapeView.ShapeType.CIRCLE);
     }
 
     private void setBlinkAnim(View view) {

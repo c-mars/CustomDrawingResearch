@@ -13,13 +13,18 @@
         android:text="@string/hello_world" android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-    <mars.c.customdrawingresearch.TestProgressBar
-        app:activeColor="@android:color/holo_orange_light"
-        app:inactiveColor="@android:color/black"
-        app:doneColor="@android:color/darker_gray"
-        app:currentProgress="5"
-        app:stepsCount="10"
+    <mars.c.customdrawingresearch.ShapeView
+        android:id="@+id/shape"
+        app:shapeColor="blue"
+        app:shapeType="triangle"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        />
+
+    <!--<mars.c.customdrawingresearch.TestProgressBar-->
+        <!--android:id="@+id/progress"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"/>-->
 
 </RelativeLayout>
